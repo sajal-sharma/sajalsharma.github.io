@@ -1,0 +1,232 @@
+/* PANELS */
+.home-card {
+    background-image: url(Images/Golden_Gate.jpg);
+    background-size: cover;
+    padding: 15% 10% 20% 10%;
+    background-attachment: fixed;
+}
+
+.profile-panel {
+    background-image: url(Images/SF_Skyline3.jpg);
+    background-size: cover;
+    padding: 1% 15% 1% 15%;
+    background-attachment: fixed;
+}
+
+.profile-card {
+    background-color: rgb(250, 250, 250);
+}
+
+.projects-panel {
+    background-image: url(Images/SF_Skyline3.jpg);
+    background-size: cover;
+    padding: 1% 15% 1% 15%;
+    background-attachment: fixed;
+}
+
+.projects-card {
+    background-color: rgb(250, 250, 250);
+}
+
+.skills-panel {
+    background-image: url(Images/SF_Skyline3.jpg);
+    background-size: cover;
+    padding: 1% 15% 1% 15%;
+    background-attachment: fixed;
+}
+
+.skills-card {
+    background-color: rgb(250, 250, 250);
+    text-align: center;
+}
+
+/* TITLE CARD */
+.name {
+    text-align: center;
+    font-family: 'Alegreya', serif;
+    font-size: 200px;
+    color: white;
+    opacity: 0.8;
+}
+
+.title-bio {
+    text-align: center;
+    font-family: 'Alegreya', serif;
+    font-size: 40px;
+    color: white;
+    opacity: 0.8;
+}
+
+/* PROFILE CARDS */
+/* .profile-title {
+    margin-top: 0px;
+    text-align: center;
+    font-family: 'Alegreya', serif;
+    color: black;
+} */
+
+.profile-bio {
+    color: black;
+    font-family: 'Alegreya', serif;
+    font-size: 20px;
+    text-indent: 3%;
+}
+
+.circle-img {
+    height: 100%;
+    width: 100%;
+    padding: none;
+    margin: none;
+    border-radius: 50%;
+    vertical-align: center;
+    display: block;
+    margin: 0 auto;
+}
+
+/* PROJECTS CARDS */
+/* .profile-title {
+    margin-top: 0px;
+    text-align: center;
+    font-family: 'Alegreya', serif;
+    color: black;
+} */
+
+.project-img {
+    height: 90%;
+    width: 90%;
+    padding-bottom: 10px;
+    vertical-align: center;
+    display: block;
+    margin: 0 auto;
+}
+
+/* SKILLS CARDS */
+/* .skills-title {
+    margin-top: 0px;
+    text-align: center;
+    font-family: 'Alegreya', serif;
+    color: black;
+} */
+.col-sm-3 {
+    padding: 10px 15px;
+}
+
+.icon {
+    height: 100px;
+    vertical-align: center;
+    display: block;
+    margin: 0 auto;
+}
+
+.java-icon {
+    width: 75px;
+}
+
+.python-icon {
+    width: 100px;
+}
+
+.html-icon {
+    width: 100px;
+}
+
+.css-icon {
+    width: 72px;
+}
+
+.js-icon {
+    width: 72px;
+}
+
+.node-icon {
+    width: 91px;
+}
+
+.bootstrap-icon {
+    height: 100px;
+    width: 100px;
+}
+
+.office-icon {
+    height: 100px;
+    width: 100px;
+}
+
+.google-icon {
+    height: 90px;
+    width: 90px;
+}
+
+.mac-icon {
+    height: 90px;
+    width: 90px;
+}
+
+.windows-icon {
+    height: 90px;
+    width: 90px;
+}
+
+.skill {
+    text-align: center;
+    color: black;
+    font-family: 'Alegreya', serif;
+    font-size: 20px;
+}
+
+.rating {
+    font-size: 20px;
+}
+/* NAVBAR */
+.navbar {
+    margin-bottom: 0;
+    background-color: rgba(255, 255, 255, 0.5);
+    z-index: 9999;
+    border: 0;
+    font-size: 12px;
+    line-height: 1.42857143;
+    border-radius: 0;
+}
+
+.navbar li a, .navbar .navbar-brand {
+    color: black;
+    font-family: 'Alegreya', serif;
+    font-size: 15px;
+}
+
+.navbar-nav li a:hover, .navbar-nav li.active a {
+    color: black;
+    background-color: gray;
+}
+
+.navbar-custom .navbar-toggle {
+    border-color: bold;
+    color: black;
+}
+
+/* MICSELLANEOUS */
+.container-fluid {
+    padding: 5% 5% 5% 5%;
+}
+
+.footer {
+    font-family: 'Alegreya', serif;
+    font-size: 15px;
+    padding: 5px 15px;
+}
+
+.title {
+    text-align: center;
+    font-family: 'Alegreya', serif;
+    font-size: 50px;
+    color: white;
+    opacity: 0.8;
+    margin: 0px;
+}
+
+@media screen and (max-width: 768px) {
+    .col-sm-4 {
+        text-align: center;
+        margin: 25px 0px;
+    }
+}
