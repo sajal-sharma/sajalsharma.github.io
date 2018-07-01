@@ -6,47 +6,30 @@
     background-attachment: fixed;
 }
 
-.profile-panel {
-    background-image: url(Images/SF_Skyline3.jpg);
-    background-size: cover;
-    padding: 1% 15% 1% 15%;
-    background-attachment: fixed;
-}
-
 .profile-card {
     background-color: rgb(250, 250, 250);
-}
-
-.projects-panel {
-    background-image: url(Images/SF_Skyline3.jpg);
-    background-size: cover;
-    padding: 1% 15% 1% 15%;
-    background-attachment: fixed;
+    border-bottom: 1px gray solid;
 }
 
 .projects-card {
-    background-color: rgb(250, 250, 250);
-}
-
-.skills-panel {
-    background-image: url(Images/SF_Skyline3.jpg);
-    background-size: cover;
-    padding: 1% 15% 1% 15%;
-    background-attachment: fixed;
+    background-color: rgb(240, 240, 240);
+    border-bottom: 1px gray solid;
 }
 
 .skills-card {
     background-color: rgb(250, 250, 250);
     text-align: center;
+    border-bottom: 1px gray solid;
 }
 
 /* TITLE CARD */
 .name {
     text-align: center;
     font-family: 'Alegreya', serif;
-    font-size: 200px;
+    font-size: 150px;
     color: white;
     opacity: 0.8;
+    margin-left: 275px;
 }
 
 .title-bio {
@@ -55,6 +38,7 @@
     font-size: 40px;
     color: white;
     opacity: 0.8;
+    margin-left: 275px;
 }
 
 /* PROFILE CARDS */
@@ -177,6 +161,45 @@
 .rating {
     font-size: 20px;
 }
+
+/* SIDENAV */
+.sidenav {
+    height: 100%;
+    width: 20%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #FD8165;
+    overflow-x: hidden;
+    padding-top: 20px;
+    line-height: 1.42857143;
+    line-height: inherit;
+}
+
+.sidenav-links {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+}
+
+.sidenav a {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    color: white;
+    font-family: 'Alegreya', serif;
+    font-size: 20px;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+}
+
+.sidenav a:hover{
+    color: black;
+    text-decoration: none;
+}
+
 /* NAVBAR */
 .navbar {
     margin-bottom: 0;
@@ -205,6 +228,14 @@
 }
 
 /* MICSELLANEOUS */
+.main {
+    margin-left: 280px;
+}
+
+.home-card {
+    margin-left: -280px;
+}
+
 .container-fluid {
     padding: 5% 5% 5% 5%;
 }
@@ -213,6 +244,7 @@
     font-family: 'Alegreya', serif;
     font-size: 15px;
     padding: 5px 15px;
+    background-color: rgb(240, 240, 240);
 }
 
 .title {
