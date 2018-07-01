@@ -9,6 +9,7 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <link href="https://fonts.googleapis.com/css?family=Alegreya|PT+Sans" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:100,300,400,500,700,800" rel="stylesheet">
 
         <title >Sajal Sharma</title>
     </head>
@@ -19,22 +20,28 @@
 
         <div class="sidenav">
             <div class="sidenav-links">
+                <div class="col-sm-6">
+                    <img src="Images/Profile_Photo.jpg" alt="Sajal Sharma" class="circle-img" >
+                </div>
                 <a href="#home">Home</a>
-                <a href="#profile">Profile</a>
+                <a href="#profile">About</a>
                 <a href="#projects">Projects</a>
                 <a href="#skills">Skills</a>
-                <a href="#contact">Contact</a>
             </div>
         </div>
 
         <div class="main">
             <div id="home" class="home-card">
-                <h1 class="name">Sajal Sharma</h1>
-                <p class="title-bio">UC Berkeley Class of 2021</p>
+                <div class="content-container">
+                    <h1 class="name">Sajal Sharma</h1>
+                    <p class="title-bio title">UC Berkeley Class of 2021</p>
+                </div>
             </div>
 
             <div id="profile" class="content-panel profile-card container-fluid">
-                <div class="col-sm-6">
+                <div class="content-container">
+                    <p class="title">About</p>
+
                     <p class="profile-bio">
                         Hi! My name is Sajal Sharma! Born and raised in Southern California,
                         I've always been fascinated by the power of technology. Cuurently an 18-year-old,
@@ -62,50 +69,45 @@
                         I'm double majoring in Computer Science and Economics at UC Berkeley.
                         Eager to learn, I love to take up new challenges.
                     </p>
-
-                    <p class="profile-bio">
-                        Hi! My name is Sajal Sharma! Born and raised in Southern California,
-                        I've always been fascinated by the power of technology. Cuurently an 18-year-old,
-                        I'm double majoring in Computer Science and Economics at UC Berkeley.
-                        Eager to learn, I love to take up new challenges.
-                    </p>
-                </div>
-
-                <div class="col-sm-6">
-                    <img src="Images/Profile_Photo.jpg" alt="Sajal Sharma" class="circle-img" >
                 </div>
             </div>
 
             <div id="projects" class="content-panel projects-card container-fluid">
-                <div class="col-sm-4">
-                    <div class="project">
-                        <a href="https://github.com/talksik/DoEverythingBar">
-                            <img src="Images/DoEverythingBar_Screen.png" alt="Doodle" class="project-img">
-                        </a>
-                        <p>DoEverythingBar</p>
-                    </div>
-                </div>
+                <div class="content-container">
+                    <p class="title">Projects</p>
 
-                <div class="col-sm-4">
-                    <div class="project">
-                        <a href="https://github.com/talksik/financeCategories">
-                            <img src="Images/Finance_Screen.png" alt="Doodle" class="project-img">
-                        </a>
-                        <p>Project Description</p>
+                    <div class="col-sm-4">
+                        <div class="project">
+                            <a href="https://github.com/talksik/DoEverythingBar">
+                                <img src="Images/DoEverythingBar_Screen.png" alt="Doodle" class="project-img">
+                            </a>
+                            <p>DoEverythingBar</p>
+                        </div>
                     </div>
-                </div>
 
-                <div class="col-sm-4">
-                    <div class="project">
-                        <a href="https://github.com/sajal-sharma/sajalsharma.github.io">
-                            <img src="Images/Website_Screen.png" alt="Doodle" class="project-img">
-                        </a>
-                        <p>Project Description</p>
+                    <div class="col-sm-4">
+                        <div class="project">
+                            <a href="https://github.com/talksik/financeCategories">
+                                <img src="Images/Finance_Screen.png" alt="Doodle" class="project-img">
+                            </a>
+                            <p>Project Description</p>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4">
+                        <div class="project">
+                            <a href="https://github.com/sajal-sharma/sajalsharma.github.io">
+                                <img src="Images/Website_Screen.png" alt="Doodle" class="project-img">
+                            </a>
+                            <p>Project Description</p>
+                        </div>
                     </div>
                 </div>
             </div>
 
             <div id="skills" class="content-panel skills-card container-fluid">
+                <p class="title">Skills</p>
+
                 <div class="col-sm-3">
                     <img src="Images/Java.svg" alt="Java" class="java-icon icon">
                     <h2 class="skill">Java</h2>

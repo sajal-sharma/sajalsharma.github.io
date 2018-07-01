@@ -1,54 +1,51 @@
 /* PANELS */
 .home-card {
-    background-image: url(Images/Golden_Gate.jpg);
     background-size: cover;
-    padding: 15% 10% 20% 10%;
     background-attachment: fixed;
+    background-color: rgb(250, 250, 250);
+    min-height: 100vh;
+    border-bottom: 1px gray solid;
 }
 
 .profile-card {
-    background-color: rgb(250, 250, 250);
+    position: relative;
+    background-color: rgb(235, 235, 235);
     border-bottom: 1px gray solid;
+    min-height: 100vh;
 }
 
 .projects-card {
-    background-color: rgb(240, 240, 240);
+    position:relative;
+    background-color: rgb(250, 250, 250);
     border-bottom: 1px gray solid;
+    min-height: 100vh;
 }
 
 .skills-card {
-    background-color: rgb(250, 250, 250);
+    position:relative;
+    background-color: rgb(235, 235, 235);
     text-align: center;
     border-bottom: 1px gray solid;
+    min-height: 100vh;
 }
 
 /* TITLE CARD */
 .name {
-    text-align: center;
-    font-family: 'Alegreya', serif;
-    font-size: 150px;
-    color: white;
-    opacity: 0.8;
-    margin-left: 275px;
+    text-align: left;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    font-weight: 800;
+    font-size: 110px;
+    color: rgb(50, 50, 50);
+    margin-left: 280px;
+    margin-bottom: 0px;
 }
 
 .title-bio {
-    text-align: center;
-    font-family: 'Alegreya', serif;
-    font-size: 40px;
-    color: white;
-    opacity: 0.8;
-    margin-left: 275px;
+    margin-left: 280px;
+    margin-top: 0px;
 }
 
 /* PROFILE CARDS */
-/* .profile-title {
-    margin-top: 0px;
-    text-align: center;
-    font-family: 'Alegreya', serif;
-    color: black;
-} */
-
 .profile-bio {
     color: black;
     font-family: 'Alegreya', serif;
@@ -68,29 +65,16 @@
 }
 
 /* PROJECTS CARDS */
-/* .profile-title {
-    margin-top: 0px;
-    text-align: center;
-    font-family: 'Alegreya', serif;
-    color: black;
-} */
-
 .project-img {
-    height: 90%;
-    width: 90%;
+    height: 75%;
+    width: 75%;
     padding-bottom: 10px;
-    vertical-align: center;
+    vertical-align: left;
     display: block;
     margin: 0 auto;
 }
 
 /* SKILLS CARDS */
-/* .skills-title {
-    margin-top: 0px;
-    text-align: center;
-    font-family: 'Alegreya', serif;
-    color: black;
-} */
 .col-sm-3 {
     padding: 10px 15px;
 }
@@ -165,12 +149,12 @@
 /* SIDENAV */
 .sidenav {
     height: 100%;
-    width: 20%;
+    width: 280px;
     position: fixed;
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: #FD8165;
+    background-color: rgb(0, 165, 255);
     overflow-x: hidden;
     padding-top: 20px;
     line-height: 1.42857143;
@@ -185,10 +169,12 @@
 }
 
 .sidenav a {
-    padding-top: 8px;
-    padding-bottom: 8px;
-    color: white;
-    font-family: 'Alegreya', serif;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: rgb(235, 235, 235);
+    font-family: 'Alegreya Sans SC', sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
     font-size: 20px;
     text-decoration: none;
     text-align: center;
@@ -196,35 +182,8 @@
 }
 
 .sidenav a:hover{
-    color: black;
+    color: rgb(0, 82, 127);
     text-decoration: none;
-}
-
-/* NAVBAR */
-.navbar {
-    margin-bottom: 0;
-    background-color: rgba(255, 255, 255, 0.5);
-    z-index: 9999;
-    border: 0;
-    font-size: 12px;
-    line-height: 1.42857143;
-    border-radius: 0;
-}
-
-.navbar li a, .navbar .navbar-brand {
-    color: black;
-    font-family: 'Alegreya', serif;
-    font-size: 15px;
-}
-
-.navbar-nav li a:hover, .navbar-nav li.active a {
-    color: black;
-    background-color: gray;
-}
-
-.navbar-custom .navbar-toggle {
-    border-color: bold;
-    color: black;
 }
 
 /* MICSELLANEOUS */
@@ -232,8 +191,25 @@
     margin-left: 280px;
 }
 
+.title {
+    text-align: left;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    margin-top: 0px;
+    color: rgb(50, 50, 50);
+}
+
 .home-card {
     margin-left: -280px;
+}
+
+.content-container {
+    padding-left: 4%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
 }
 
 .container-fluid {
@@ -244,16 +220,7 @@
     font-family: 'Alegreya', serif;
     font-size: 15px;
     padding: 5px 15px;
-    background-color: rgb(240, 240, 240);
-}
-
-.title {
-    text-align: center;
-    font-family: 'Alegreya', serif;
-    font-size: 50px;
-    color: white;
-    opacity: 0.8;
-    margin: 0px;
+    background-color: rgb(250, 250, 250);
 }
 
 @media screen and (max-width: 768px) {
