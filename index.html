@@ -3,13 +3,22 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="author" content="Sajal Sharma">
 
-        <link rel="stylesheet" type="text/css" href="main.css">
+        <!-- Stylesheets -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <link type="text/css" href="main.css" rel="stylesheet">
+
+        <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Alegreya|PT+Sans" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:100,300,400,500,700,800" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:100,300,400,500,700,800,900" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900" rel="stylesheet" type="text/css">
+        <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+        <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
         <title >Sajal Sharma</title>
     </head>
@@ -18,173 +27,189 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
         <script src="script.js"></script>
 
-        <div class="sidenav">
-            <div class="sidenav-links">
-                <div class="col-sm-6">
-                    <img src="Images/Profile_Photo.jpg" alt="Sajal Sharma" class="circle-img" >
-                </div>
-                <a href="#home">Home</a>
-                <a href="#profile">About</a>
-                <a href="#projects">Projects</a>
-                <a href="#skills">Skills</a>
-            </div>
-        </div>
-
-        <div class="main">
-            <div id="home" class="home-card">
-                <div class="content-container">
-                    <h1 class="name">Sajal Sharma</h1>
-                    <p class="title-bio title">UC Berkeley Class of 2021</p>
-                </div>
-            </div>
-
-            <div id="profile" class="content-panel profile-card container-fluid">
-                <div class="content-container">
-                    <p class="title">About</p>
-
-                    <p class="profile-bio">
-                        Hi! My name is Sajal Sharma! Born and raised in Southern California,
-                        I've always been fascinated by the power of technology. Cuurently an 18-year-old,
-                        I'm double majoring in Computer Science and Economics at UC Berkeley.
-                        Eager to learn, I love to take up new challenges.
-                    </p>
-
-                    <p class="profile-bio">
-                        Hi! My name is Sajal Sharma! Born and raised in Southern California,
-                        I've always been fascinated by the power of technology. Cuurently an 18-year-old,
-                        I'm double majoring in Computer Science and Economics at UC Berkeley.
-                        Eager to learn, I love to take up new challenges.
-                    </p>
-
-                    <p class="profile-bio">
-                            Hi! My name is Sajal Sharma! Born and raised in Southern California,
-                        I've always been fascinated by the power of technology. Cuurently an 18-year-old,
-                        I'm double majoring in Computer Science and Economics at UC Berkeley.
-                        Eager to learn, I love to take up new challenges.
-                    </p>
-
-                    <p class="profile-bio">
-                        Hi! My name is Sajal Sharma! Born and raised in Southern California,
-                        I've always been fascinated by the power of technology. Cuurently an 18-year-old,
-                        I'm double majoring in Computer Science and Economics at UC Berkeley.
-                        Eager to learn, I love to take up new challenges.
-                    </p>
-                </div>
-            </div>
-
-            <div id="projects" class="content-panel projects-card container-fluid">
-                <div class="content-container">
-                    <p class="title">Projects</p>
-
-                    <div class="col-sm-4">
-                        <div class="project">
-                            <a href="https://github.com/talksik/DoEverythingBar">
-                                <img src="Images/DoEverythingBar_Screen.png" alt="Doodle" class="project-img">
-                            </a>
-                            <p>DoEverythingBar</p>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-4">
-                        <div class="project">
-                            <a href="https://github.com/talksik/financeCategories">
-                                <img src="Images/Finance_Screen.png" alt="Doodle" class="project-img">
-                            </a>
-                            <p>Project Description</p>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-4">
-                        <div class="project">
-                            <a href="https://github.com/sajal-sharma/sajalsharma.github.io">
-                                <img src="Images/Website_Screen.png" alt="Doodle" class="project-img">
-                            </a>
-                            <p>Project Description</p>
-                        </div>
+        <div class="row">
+            <div class="hidden-xs col-sm-2">
+                <div class="sidenav">
+                    <div class="sidenav-links">
+                        <a href="#home">
+                            <img src="Images/Profile_Photo.jpg" alt="Sajal Sharma" class="circle-img" >
+                        </a>
+                        <a href="#profile">About</a>
+                        <a href="#education">Education</a>
+                        <a href="#projects">Projects</a>
+                        <a href="#skills">Skills</a>
                     </div>
                 </div>
             </div>
 
-            <div id="skills" class="content-panel skills-card container-fluid">
-                <p class="title">Skills</p>
+            <div class="col-xs-12 col-sm-10">
+                    <div id="home" class="content-panel home-card container-fluid">
+                        <div class="content-container">
+                            <div class="intro-content">
+                                <h1 class="name">Sajal <span class="last-name">Sharma</span></h1>
+                                <h2 class="title-bio">UC Berkeley Class of 2021</h2>
+                            </div>
 
-                <div class="col-sm-3">
-                    <img src="Images/Java.svg" alt="Java" class="java-icon icon">
-                    <h2 class="skill">Java</h2>
-                    <p class="rating">★★★★☆</p>
-                </div>
+                            <a href="https://www.facebook.com/sajal16.sharma">
+                                <i class="fab fa-facebook-square" style="font-size:55px"></i>
+                            </a>
 
-                <div class="col-sm-3">
-                    <img src="Images/Python.png" alt="Python" class="python-icon icon">
-                    <h2 class="skill">Python</h2>
-                    <p class="rating">★★★★☆</p>
-                </div>
+                            <a href="https://www.linkedin.com/in/sajal-sharma/">
+                                <i class="fab fa-linkedin" style="font-size:55px"></i>
+                            </a>
 
-                <div class="col-sm-3">
-                    <img src="Images/HTML.png" alt="HTML" class="html-icon icon">
-                    <h2 class="skill">HTML</h2>
-                    <p class="rating">★★★★☆</p>
-                </div>
+                            <a href="https://github.com/sajal-sharma">
+                                <i class="fab fa-github-square" style="font-size:55px"></i>
+                            </a>
 
-                <div class="col-sm-3">
-                    <img src="Images/CSS.png" alt="CSS" class="css-icon icon">
-                    <h2 class="skill">CSS</h2>
-                    <p class="rating">★★★★☆</p>
-                </div>
+                            <a href="mailto:sharma.sajal@berkeley.edu">
+                                <i class="fas fa-envelope-square" style="font-size:55px"></i>
+                            </a>
 
-                <br>
-                <div class="col-sm-3">
-                    <img src="Images/JavaScript.png" alt="JavaScript" class="js-icon icon">
-                    <h2 class="skill">JavaScript</h2>
-                    <p class="rating">★★★☆☆</p>
-                </div>
+                            <a href="mailto:sharma.sajal@berkeley.edu">
+                                <i class="fa fa-paperclip" style="font-size:55px"></i>
+                            </a>
+                        </div>
+                    </div>
 
-                <div class="col-sm-3">
-                    <img src="Images/Node.svg" alt="Node.js" class="node-icon icon">
-                    <h2 class="skill">Node.js</h2>
-                    <p class="rating">★★★☆☆</p>
-                </div>
+                    <div id="profile" class="content-panel profile-card container-fluid">
+                        <div class="content-container">
+                            <h2 class="title">About</h2>
 
-                <div class="col-sm-3">
-                    <img src="Images/Bootstrap.png" alt="Bootstrap" class="bootstrap-icon icon">
-                    <h2 class="skill">Bootstrap</h2>
-                    <p class="rating">★★★★☆</p>
-                </div>
+                            <p class="profile-bio">
+                                
+                                Hi! My name is Sajal Sharma! Born and raised in Southern California,
+                                I've always been fascinated by the power of technology. Cuurently an 18-year-old,
+                                I'm double majoring in Computer Science and Economics at UC Berkeley.
+                                Eager to learn, I love to take up new challenges.
+                            </p>
+                        </div>
+                    </div>
 
-                <div class="col-sm-3">
-                    <img src="Images/Office.png" alt="Microsoft Office" class="office-icon icon">
-                    <h2 class="skill">Microsoft Office</h2>
-                    <p class="rating">★★★★★</p>
-                </div>
+                    <div id="education" class="content-panel education-card container-fluid">
+                        <div class="content-container">
+                            <h2 class="title">Education</h2>
 
-                <br>
-                <div class="col-sm-3">
-                    <img src="Images/Google.svg" alt="Google Suite" class="google-icon icon">
-                    <h2 class="skill">Google Suite</h2>
-                    <p class="rating">★★★★★</p>
-                </div>
+                            <h3 class="subtitle">UC Berkeley<span class="date">August 2017-May 2021</span></h3>
+                            <h4 class="degree">Bachelor's in Computer Science</h4>
+                            <h4 class="degree">Bachelor's in Economics</h4>
+                                <ul class="list">
+                                    <li class="bullets">3.92 GPA</li>
+                                    <li class="bullets">Co-Founder and Vice President of IDE</li>
+                                    <li class="bullets">Former Undergraduate Researcher at the Berkeley Institute of Data Science</li>
+                                </ul>
 
-                <div class="col-sm-3">
-                    <img src="Images/Mac.png" alt="macOS" class="mac-icon icon">
-                    <h2 class="skill">macOS</h2>
-                    <p class="rating">★★★★☆</p>
-                </div>
+                            <h3 class="subtitle">University High School<span class="date">September 2013-June 2017</span></h3>
+                                <ul class="list">
+                                    <li class="bullets">4.45 Weighted GPA</li>
+                                    <li class="bullets">Scored 35 (out of 36) on the ACT</li>
+                                    <li class="bullets">Speech and Debate</li>
+                                    <li class="bullets">Volleyball</li>
+                                    <li class="bullets">Community Service</li>
+                                </ul>
 
-                <div class="col-sm-3">
-                    <img src="Images/Windows.png" alt="Windows" class="windows-icon icon">
-                    <h2 class="skill">Windows</h2>
-                    <p class="rating">★★★★☆</p>
-                </div>
+                            <h3 class="subtitle">Awards</h3>
+                                <ul class="list">
+                                    <li class="bullets">GPA: 3.92</li>
+                                    <li class="bullets">Stuff</li>
+                                </ul>
+                        </div>
+                    </div>
 
-                <div class="col-sm-3">
-                    <h2 class="skill">POWER</h2>
-                    <p class="rating">★★★★☆</p>
-                </div>
+                    <div id="projects" class="content-panel projects-card container-fluid">
+                        <div class="content-container">
+                            <h2 class="title">Projects</h2>
+
+                            <div class="col-sm-4">
+                                <div class="project">
+                                    <a href="https://github.com/talksik/DoEverythingBar">
+                                        <img src="Images/DoEverythingBar_Screen.png" alt="Doodle" class="project-img">
+                                    </a>
+                                    <p class="project-name">DoEverythingBar</p>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-4">
+                                <div class="project">
+                                    <a href="https://github.com/talksik/financeCategories">
+                                        <img src="Images/Finance_Screen.png" alt="Doodle" class="project-img">
+                                    </a>
+                                    <p class="project-name">Project Description</p>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-4">
+                                <div class="project">
+                                    <a href="https://github.com/sajal-sharma/sajalsharma.github.io">
+                                        <img src="Images/Website_Screen.png" alt="Doodle" class="project-img">
+                                    </a>
+                                    <p class="project-name">Project Description</p>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-4">
+                                <div class="project">
+                                    <a href="https://github.com/talksik/DoEverythingBar">
+                                        <img src="Images/DoEverythingBar_Screen.png" alt="Doodle" class="project-img">
+                                    </a>
+                                    <p class="project-name">DoEverythingBar</p>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-4">
+                                <div class="project">
+                                    <a href="https://github.com/talksik/financeCategories">
+                                        <img src="Images/Finance_Screen.png" alt="Doodle" class="project-img">
+                                    </a>
+                                    <p class="project-name">Project Description</p>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-4">
+                                <div class="project">
+                                    <a href="https://github.com/talksik/financeCategories">
+                                        <img src="Images/Finance_Screen.png" alt="Doodle" class="project-img">
+                                    </a>
+                                    <p class="project-name">Project Description</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="skills" class="content-panel skills-card container-fluid">
+                        <div class="content-container">
+                            <h2 class="title">Skills</h2>
+
+                            <h3 class="subtitle">Programming Languages</h3>
+                                <ul class="list">
+                                    <li class="bullets">Java 8</li>
+                                    <li class="bullets">Python 3.6 (including NumPy)</li>
+                                    <li class="bullets">HTML, CSS, and Bootstrap</li>
+                                    <li class="bullets">Basic SQL</li>
+                                    <li class="bullets">Basic Swift</li>
+                                    <li class="bullets">Familiar with Scheme</li>
+                                </ul>
+
+                            <h3 class="subtitle">Tools</h3>
+                                <ul class="list">
+                                    <li class="bullets">Microsoft Office</li>
+                                    <li class="bullets">Google Suite</li>
+                                    <li class="bullets">XCode</li>
+                                </ul>
+
+                            <h3 class="subtitle">Languages</h3>
+                                <ul class="list">
+                                    <li class="bullets">English</li>
+                                    <li class="bullets">Native proficiency in Hindi</li>
+                                    <li class="bullets">Limited proficiency in Spanish</li>
+                                </ul>
+                        </div>
+                    </div>
+
+                    <footer class="container-fluid text-center footer">
+                        <p>© Sajal Sharma 2018</p>
+                    </footer>
             </div>
-
-            <footer class="container-fluid text-center footer">
-                <p>© Sajal Sharma 2018</p>
-            </footer>
         </div>
     </body>
 </html>

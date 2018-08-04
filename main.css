@@ -1,31 +1,36 @@
 /* PANELS */
 .home-card {
-    background-size: cover;
-    background-attachment: fixed;
+    position: relative;
     background-color: rgb(250, 250, 250);
+    border-bottom: 1px rgb(50, 50, 50) solid;
     min-height: 100vh;
-    border-bottom: 1px gray solid;
 }
 
 .profile-card {
     position: relative;
-    background-color: rgb(235, 235, 235);
-    border-bottom: 1px gray solid;
+    background-color: rgb(250, 250, 250);
+    border-bottom: 1px rgb(50, 50, 50) solid;
+    min-height: 100vh;
+}
+
+.education-card {
+    position: relative;
+    background-color: rgb(250, 250, 250);
+    border-bottom: 1px rgb(50, 50, 50) solid;
     min-height: 100vh;
 }
 
 .projects-card {
     position:relative;
     background-color: rgb(250, 250, 250);
-    border-bottom: 1px gray solid;
+    border-bottom: 1px rgb(50, 50, 50) solid;
     min-height: 100vh;
 }
 
 .skills-card {
     position:relative;
-    background-color: rgb(235, 235, 235);
-    text-align: center;
-    border-bottom: 1px gray solid;
+    background-color: rgb(250, 250, 250);
+    border-bottom: 1px rgb(50, 50, 50) solid;
     min-height: 100vh;
 }
 
@@ -34,117 +39,110 @@
     text-align: left;
     font-family: 'Alegreya Sans SC', sans-serif;
     font-weight: 800;
-    font-size: 110px;
+    font-size: 105px;
     color: rgb(50, 50, 50);
-    margin-left: 280px;
     margin-bottom: 0px;
 }
 
+.last-name {
+    color: rgb(0, 165, 255);
+}
+
 .title-bio {
-    margin-left: 280px;
+    text-align: left;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    font-weight: 700;
+    font-size: 45px;
+    margin-top: 0px;
+    color: rgb(50, 50, 50);
     margin-top: 0px;
 }
 
-/* PROFILE CARDS */
+.fab {
+    margin-left: 7px;
+    margin-right: 10px;
+    color: rgb(50, 50, 50);
+    border-radius: 50%;
+}
+
+.fas {
+    margin-left: 7px;
+    color: rgb(50, 50, 50);
+    border-radius: 50%;
+}
+
+.fab:hover {
+    color: rgb(0, 132, 204);
+}
+
+.fas:hover {
+    color: rgb(0, 132, 204);
+}
+
+/* PROFILE CARD */
 .profile-bio {
     color: black;
-    font-family: 'Alegreya', serif;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+/* EDUCATION CARD */
+.date {
+    float: right;
+    font-size: 18px;
+    color: rgb(0, 165, 255);
+}
+
+.degree {
+    font-family: 'Alegreya Sans SC', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    color: rgb(0, 165, 255);
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+.bullets {
+    font-family: 'Alegreya Sans SC', sans-serif;
+    font-weight: 500;
     font-size: 20px;
-    text-indent: 3%;
 }
 
-.circle-img {
-    height: 100%;
-    width: 100%;
-    padding: none;
-    margin: none;
-    border-radius: 50%;
-    vertical-align: center;
-    display: block;
-    margin: 0 auto;
-}
-
-/* PROJECTS CARDS */
+/* PROJECTS CARD */
 .project-img {
-    height: 75%;
-    width: 75%;
-    padding-bottom: 10px;
-    vertical-align: left;
+    height: 95%;
+    width: 95%;
     display: block;
-    margin: 0 auto;
+    margin: 0 0;
+    border-style: solid;
+    border-width: 5px;
+    border-color: rgb(76, 192, 255);
+    margin-bottom: 4px;
 }
 
-/* SKILLS CARDS */
-.col-sm-3 {
-    padding: 10px 15px;
+@media screen and (min-width: 1200px) {
+    .project-img {
+        height: 80%;
+        width: 80%;
+    }
 }
 
-.icon {
-    height: 100px;
-    vertical-align: center;
-    display: block;
-    margin: 0 auto;
+.project-img:hover {
+    border-color: rgb(0, 132, 204);
 }
 
-.java-icon {
-    width: 75px;
+.project-name {
+    font-family: 'Alegreya Sans SC', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
 }
 
-.python-icon {
-    width: 100px;
+.project {
+    margin-bottom: 25px;
 }
 
-.html-icon {
-    width: 100px;
-}
-
-.css-icon {
-    width: 72px;
-}
-
-.js-icon {
-    width: 72px;
-}
-
-.node-icon {
-    width: 91px;
-}
-
-.bootstrap-icon {
-    height: 100px;
-    width: 100px;
-}
-
-.office-icon {
-    height: 100px;
-    width: 100px;
-}
-
-.google-icon {
-    height: 90px;
-    width: 90px;
-}
-
-.mac-icon {
-    height: 90px;
-    width: 90px;
-}
-
-.windows-icon {
-    height: 90px;
-    width: 90px;
-}
-
-.skill {
-    text-align: center;
-    color: black;
-    font-family: 'Alegreya', serif;
-    font-size: 20px;
-}
-
-.rating {
-    font-size: 20px;
-}
+/* SKILLS CARD */
 
 /* SIDENAV */
 .sidenav {
@@ -169,8 +167,8 @@
 }
 
 .sidenav a {
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 8px;
+    padding-bottom: 8px;
     color: rgb(235, 235, 235);
     font-family: 'Alegreya Sans SC', sans-serif;
     font-weight: 400;
@@ -181,31 +179,50 @@
     display: block;
 }
 
-.sidenav a:hover{
-    color: rgb(0, 82, 127);
+.sidenav a:hover {
+    color: rgb(50, 50, 50);
     text-decoration: none;
 }
 
-/* MICSELLANEOUS */
-.main {
-    margin-left: 280px;
+.circle-img {
+    height: 65%;
+    width: 65%;
+    padding: none;
+    border-radius: 50%;
+    vertical-align: center;
+    display: block;
+    margin: 14px auto;
+    border-style: solid;
+    border-width: 7px;
+    border-color: rgb(76, 192, 255);
 }
 
+.circle-img:hover {
+    border-color: rgb(0, 132, 204);
+}
+
+/* MICSELLANEOUS */
 .title {
     text-align: left;
     font-family: 'Alegreya Sans SC', sans-serif;
     font-weight: 700;
-    font-size: 40px;
+    font-size: 45px;
     margin-top: 0px;
+    margin-bottom: 25px;
     color: rgb(50, 50, 50);
 }
 
-.home-card {
-    margin-left: -280px;
+.subtitle {
+    text-align: left;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    font-weight: 500;
+    font-size: 30px;
+    margin-top: 0px;
+    color: rgb(50, 50, 50);
+    margin-bottom: 2px;
 }
 
 .content-container {
-    padding-left: 4%;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -217,15 +234,27 @@
 }
 
 .footer {
-    font-family: 'Alegreya', serif;
-    font-size: 15px;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
     padding: 5px 15px;
     background-color: rgb(250, 250, 250);
 }
 
 @media screen and (max-width: 768px) {
     .col-sm-4 {
-        text-align: center;
+        display: block;
         margin: 25px 0px;
     }
+}
+
+.list {
+    margin-top: 2px;
+    margin-bottom: 25px;
+}
+
+.bullets {
+    font-family: 'Alegreya Sans SC', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
 }
