@@ -410,12 +410,108 @@ html {
 
     .education-card {
         position: relative;
+        min-height: 115vh;
+    }
+
+    .experience-card {
+        position: relative;
+        min-height: 145vh;
+    }
+
+    .projects-card {
+        position: relative;
+        min-height: 100vh;
+    }
+
+    .skills-card {
+        position: relative;
+        min-height: 105vh;
+    }
+
+    .awards-card {
+        position: relative;
+        min-height: 100vh;
+    }
+}
+
+@media (max-width: 414px) and (max-height: 736px) {
+    .about-card {
+        position: relative;
+        min-height: 100vh;
+    }
+
+    .education-card {
+        position: relative;
         min-height: 100vh;
     }
 
     .experience-card {
         position: relative;
-        min-height: 125vh;
+        min-height: 130vh;
+    }
+
+    .projects-card {
+        position: relative;
+        min-height: 100vh;
+    }
+
+    .skills-card {
+        position: relative;
+        min-height: 100vh;
+    }
+
+    .awards-card {
+        position: relative;
+        min-height: 100vh;
+    }
+}
+
+@media (max-width: 375px) and (max-height: 812px) {
+    .about-card {
+        position: relative;
+        min-height: 100vh;
+    }
+
+    .education-card {
+        position: relative;
+        min-height: 100vh;
+    }
+
+    .experience-card {
+        position: relative;
+        min-height: 120vh;
+    }
+
+    .projects-card {
+        position: relative;
+        min-height: 100vh;
+    }
+
+    .skills-card {
+        position: relative;
+        min-height: 100vh;
+    }
+
+    .awards-card {
+        position: relative;
+        min-height: 100vh;
+    }
+}
+
+@media (max-width: 414px) and (max-height: 896px) {
+    .about-card {
+        position: relative;
+        min-height: 100vh;
+    }
+
+    .education-card {
+        position: relative;
+        min-height: 100vh;
+    }
+
+    .experience-card {
+        position: relative;
+        min-height: 110vh;
     }
 
     .projects-card {
@@ -442,39 +538,7 @@ html {
 
     .education-card {
         position: relative;
-        min-height: 100vh;
-    }
-
-    .experience-card {
-        position: relative;
-        min-height: 145vh;
-    }
-
-    .projects-card {
-        position: relative;
-        min-height: 100vh;
-    }
-
-    .skills-card {
-        position: relative;
-        min-height: 100vh;
-    }
-
-    .awards-card {
-        position: relative;
-        min-height: 100vh;
-    }
-}
-
-@media (max-width: 414px) and (max-height: 736px) {
-    .about-card {
-        position: relative;
-        min-height: 110vh;
-    }
-
-    .education-card {
-        position: relative;
-        min-height: 100vh;
+        min-height: 105vh;
     }
 
     .experience-card {
@@ -489,7 +553,7 @@ html {
 
     .skills-card {
         position: relative;
-        min-height: 110vh;
+        min-height: 100vh;
     }
 
     .awards-card {
@@ -498,38 +562,7 @@ html {
     }
 }
 
-@media (max-width: 768px) and (max-height: 730px) {
-    .about-card {
-        position: relative;
-        min-height: 110vh;
-    }
-
-    .education-card {
-        position: relative;
-        min-height: 100vh;
-    }
-
-    .experience-card {
-        position: relative;
-        min-height: 155vh;
-    }
-
-    .projects-card {
-        position: relative;
-        min-height: 100vh;
-    }
-
-    .skills-card {
-        position: relative;
-        min-height: 110vh;
-    }
-
-    .awards-card {
-        position: relative;
-        min-height: 100vh;
-    }
-}
-
+/*
 @media (max-height: 500px) {
     .about-card {
         position: relative;
@@ -625,6 +658,7 @@ html {
         min-height: 100vh;
     }
 }
+*/
 
 @media (max-width: 650px) {
     .date {
