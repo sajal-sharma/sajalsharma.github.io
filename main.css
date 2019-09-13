@@ -362,6 +362,10 @@ figcaption {
     margin-bottom: 32px;
 }
 
+.top-list {
+    margin-bottom: 4px;
+}
+
 ::selection {
     background: #ffb24f;
     text-shadow: none;
