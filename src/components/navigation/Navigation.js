@@ -1,23 +1,37 @@
-import React, { Component } from "react";
+import React from "react";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
+import Radium, { StyleRoot } from "radium";
 
-import "./Navigation.css";
+import "../../assets/css/styles.css";
 
-class Navigation extends Component {
-    render() {
-        return (
-            <Navbar bg="light" expand="sm">
-                <Navbar.Brand href="/">Sajal Sharma</Navbar.Brand>
+function Navigation() {
+    return (
+        <StyleRoot>
+            <Navbar className="navbar" expand="sm">
+                <Navbar.Brand className="navbar-name" href="/">
+                    sajal sharma
+                </Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse className="justify-content-end" id="basic-navbar-nav">
                     <Nav className="justify-content-end">
-                        <Nav.Link href="/#/about">About</Nav.Link>
+                        <Nav.Link className="navbar-link" href="/#/about">
+                            about
+                        </Nav.Link>
+                        <Nav.Link className="navbar-link" href="/#/education">
+                            education
+                        </Nav.Link>
+                        <Nav.Link className="navbar-link" href="/#/experience">
+                            experience
+                        </Nav.Link>
+                        <Nav.Link className="navbar-link" href="/#/blog">
+                            blog
+                        </Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
             </Navbar>
-        );
-    }
+        </StyleRoot>
+    );
 }
 
-export default Navigation;
+export default Radium(Navigation);

@@ -1,13 +1,11 @@
 import React, { Component } from "react";
 import Typist from "react-typist";
-import Container from "react-bootstrap/Container";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
-
-import "./Home.css";
+import { Container, Row, Col } from "react-bootstrap";
 
 import Navigation from "../navigation/Navigation";
 import headshot from "../../assets/images/sajalsharma.png";
+
+import "../../assets/css/styles.css";
 
 class Home extends Component {
     constructor() {
@@ -34,29 +32,16 @@ class Home extends Component {
     }
 
     render() {
-        let greeting_class_name;
-        let image_class_name;
-
-        if (this.state.width > 992) {
-            greeting_class_name = "greeting-lg";
-            image_class_name = "image-lg";
-        } else {
-            greeting_class_name = "greeting-sm";
-            image_class_name = "image-sm";
-        }
-
         return (
             <div className="home">
                 <Navigation></Navigation>
                 <Container>
-                    <Row>
-                        <Col sm={12} lg={7}>
-                            <div className={`${image_class_name}`}>
-                                <img className="headshot" src={headshot} alt="Sajal Sharma"></img>
-                            </div>
+                    <Row className="full-screen">
+                        <Col sm={12} xl={6} className="center-vertical">
+                            <img className="graphic" src={headshot} alt="Sajal Sharma"></img>
                         </Col>
-                        <Col sm={12} lg={5}>
-                            <div className={`${greeting_class_name}`}>
+                        <Col sm={12} xl={6} className="center-vertical">
+                            <div className="greeting">
                                 <p className="text">Hello, world! I'm a</p>
                                 <Typist
                                     startDelay={900}
