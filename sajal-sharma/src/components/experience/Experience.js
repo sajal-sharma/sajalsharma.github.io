@@ -1,24 +1,44 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Navigation from "../navigation/Navigation";
 import Banner from "../footer/Banner";
 import Footer from "../footer/Footer";
 import { Container, Row, Col } from "react-bootstrap";
+import ScrollReveal from "scrollreveal";
 
 import "../../assets/css/styles.css";
 
 function Experience() {
+	useEffect(() => {
+		const headerOptions = {
+			origin: "left",
+			duration: 1000,
+			delay: 250,
+			distance: "1em",
+		};
+
+		const entryOptions = {
+			origin: "right",
+			duration: 1000,
+			delay: 250,
+			distance: "1em",
+		};
+
+		ScrollReveal().reveal(".header", headerOptions);
+		ScrollReveal().reveal(".entry", entryOptions);
+	}, []);
+
 	return (
 		<div className="about">
 			<Navigation />
 
 			<Container fluid>
 				<Row className="content-row">
-					<Col sm={4}>
+					<Col sm={12} md={4}>
 						<p className="header">Work Experience</p>
 					</Col>
 
-					<Col sm={8}>
-						<div>
+					<Col sm={12} md={8}>
+						<div className="entry">
 							<p className="title">Apple Inc.</p>
 							<p className="date">
 								May 2020 - August 2020 &#xb7; Cupertino, CA
@@ -51,7 +71,7 @@ function Experience() {
 							</ul>
 						</div>
 
-						<div>
+						<div className="entry">
 							<p className="title mt-4">VMware, Inc.</p>
 							<p className="date">
 								May 2019 - August 2019 &#xb7; Palo Alto, CA
@@ -83,12 +103,12 @@ function Experience() {
 				</Row>
 
 				<Row className="content-row">
-					<Col sm={4}>
+					<Col sm={12} md={4}>
 						<p className="header">Activities</p>
 					</Col>
 
-					<Col sm={8}>
-						<div>
+					<Col sm={12} md={8}>
+						<div className="entry">
 							<p className="title">Computer Science Mentors</p>
 							<p className="date">January 2019 - Present</p>
 							<p className="position">Senior Mentor</p>
@@ -105,7 +125,7 @@ function Experience() {
 							</ul>
 						</div>
 
-						<div>
+						<div className="entry">
 							<p className="title mt-4">Upsilon Pi Epsilon: Nu Chapter</p>
 							<p className="date">May 2019 - May 2020</p>
 							<p className="position">Industrial Relations Officer</p>
@@ -118,7 +138,7 @@ function Experience() {
 							</ul>
 						</div>
 
-						<div>
+						<div className="entry">
 							<p className="title mt-4">RoboBears</p>
 							<p className="date">July 2018 - May 2020</p>
 							<p className="position">Web Developer</p>

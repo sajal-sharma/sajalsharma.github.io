@@ -50,17 +50,39 @@
 /* Banner */
 .banner {
 	object-fit: cover;
-	height: 66.6vh;
+	height: 65vh;
 	width: 100%;
 	overflow: hidden;
 }
 
 .citation {
-	color: gray !important;
+	color: grey !important;
 	font-family: "Open Sans", sans-serif;
 	font-size: x-small;
 	font-weight: 400;
 	text-align: right;
+}
+
+.citation-link {
+	color: grey !important;
+	font-family: "Open Sans", sans-serif;
+	font-size: x-small;
+	font-weight: 600;
+	text-align: right;
+}
+
+.citation-link:hover {
+	color: black !important;
+	text-decoration: none;
+}
+
+@media (max-width: 768px) {
+	.banner {
+		object-fit: cover;
+		height: 25vh;
+		width: 100%;
+		overflow: hidden;
+	}
 }
 
 /* Footer */
@@ -86,6 +108,21 @@
 	font-weight: 600;
 	text-align: right;
 	margin: 0;
+}
+
+@media (max-width: 768px) {
+	.footer {
+		padding: 0;
+	}
+
+	.links {
+		text-align: center;
+	}
+
+	.copyright {
+		text-align: center;
+		margin: 0;
+	}
 }
 
 /* Home */
@@ -120,11 +157,11 @@
 	text-align: left;
 }
 
-.Typist .Cursor {
+.typist .Cursor {
 	display: inline-block;
 }
 
-.Typist .Cursor--blinking {
+.typist .Cursor--blinking {
 	opacity: 1;
 	animation: blink 1s linear infinite;
 }

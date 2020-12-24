@@ -1,31 +1,50 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Navigation from "../navigation/Navigation";
 import Banner from "../footer/Banner";
 import Footer from "../footer/Footer";
 import { Container, Row, Col } from "react-bootstrap";
+import ScrollReveal from "scrollreveal";
 
 import "../../assets/css/styles.css";
 
 function Education() {
+	useEffect(() => {
+		const headerOptions = {
+			origin: "left",
+			duration: 1000,
+			delay: 250,
+			distance: "1em",
+		};
+
+		const entryOptions = {
+			origin: "right",
+			duration: 1000,
+			delay: 250,
+			distance: "1em",
+		};
+
+		ScrollReveal().reveal(".header", headerOptions);
+		ScrollReveal().reveal(".entry", entryOptions);
+	}, []);
+
 	return (
 		<div className="about">
 			<Navigation />
 
 			<Container fluid>
 				<Row className="content-row">
-					<Col sm={4}>
+					<Col sm={12} md={4}>
 						<p className="header">Education</p>
 					</Col>
 
-					<Col sm={8}>
-						<div>
+					<Col sm={12} md={8}>
+						<div className="entry">
 							<p className="title">University of California, Berkeley</p>
 							<p className="date">August 2017 - May 2021</p>
 
 							<p className="position mt-3">
 								Bachelor of Arts, Computer Science
 							</p>
-
 							<p className="bullet">Coursework:</p>
 							<ul className="bullets">
 								<li className="bullet">
@@ -70,7 +89,7 @@ function Education() {
 							</ul>
 						</div>
 
-						<div>
+						<div className="entry">
 							<p className="title mt-4">University High School</p>
 							<p className="date">September 2013 - June 2017</p>
 
@@ -86,26 +105,30 @@ function Education() {
 				</Row>
 
 				<Row className="content-row">
-					<Col sm={4}>
-						<p className="header">Awards/Honors</p>
+					<Col sm={12} md={4}>
+						<p className="header">Honors</p>
 					</Col>
 
-					<Col sm={8}>
-						<div>
+					<Col sm={12} md={8}>
+						<div className="entry">
 							<p className="title">Best Web Application</p>
 							<p className="date">October 2017 &#xb7; Cal Hacks</p>
 							<p className="description">
 								Awarded to the team that develops the best application for web
 								browsers determined by the judges
 							</p>
+						</div>
 
+						<div className="entry">
 							<p className="title mt-4">Cal Hacks Finalist</p>
 							<p className="date">October 2017 &#xb7; Cal Hacks</p>
 							<p className="description">
 								Six finalists were hand-selected by judges for the development
 								and potential of their projects from a pool of 216 entries
 							</p>
+						</div>
 
+						<div className="entry">
 							<p className="title mt-4">National AP Scholar</p>
 							<p className="date">August 2017 &#xb7; College Board</p>
 							<p className="description">
@@ -113,13 +136,17 @@ function Education() {
 								AP Exams taken and score 4 or higher on at least eight of these
 								exams
 							</p>
+						</div>
 
+						<div className="entry">
 							<p className="title mt-4">Summa Cum Laude</p>
 							<p className="date">May 2017 &#xb7; University High School</p>
 							<p className="description">
 								Given to students with a weighted GPA of 4.40 or higher
 							</p>
+						</div>
 
+						<div className="entry">
 							<p className="title mt-4">Commended National Merit Scholar</p>
 							<p className="date">
 								March 2017 &#xb7; National Merit Scholarship Corporation

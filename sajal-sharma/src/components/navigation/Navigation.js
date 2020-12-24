@@ -68,11 +68,11 @@ export default class NavExample extends React.Component {
 							</NavLink>
 						</NavItem>
 
-						<NavItem>
+						{/* <NavItem>
 							<NavLink className="navbar-link" href="#/photography">
 								Photography
 							</NavLink>
-						</NavItem>
+						</NavItem> */}
 					</Nav>
 				</Collapse>
 			</Navbar>
