@@ -4,7 +4,10 @@ import { Container, Row, Col } from "react-bootstrap";
 import ScrollReveal from "scrollreveal";
 
 import "../../assets/css/styles.css";
-import picture from "../../assets/images/headshot.jpg";
+import mountain_view_picture from "../../assets/images/mountain_view.jpg";
+import radio_city_picture from "../../assets/images/radio_city.jpg";
+import santa_cruz_picture from "../../assets/images/santa_cruz.jpg";
+import shoreline_park_picture from "../../assets/images/shoreline_park.jpg";
 
 function Photography() {
 	useEffect(() => {
@@ -41,10 +44,37 @@ function Photography() {
 							favorite shots. Check out my Instagram for more!
 						</p>
 
-						<img className="pic" alt="Sajal Sharma" src={picture}></img>
-						<img className="pic" alt="Sajal Sharma" src={picture}></img>
-						<img className="pic" alt="Sajal Sharma" src={picture}></img>
-						<img className="pic" alt="Sajal Sharma" src={picture}></img>
+						<Row>
+							<Col sm={12}>
+								<img
+									className="image"
+									alt="Sajal Sharma"
+									src={mountain_view_picture}
+								></img>
+
+								<img
+									className="image"
+									alt="Sajal Sharma"
+									src={santa_cruz_picture}
+								></img>
+							</Col>
+						</Row>
+
+						<Row>
+							<Col sm={12}>
+								<img
+									className="image"
+									alt="Sajal Sharma"
+									src={shoreline_park_picture}
+								></img>
+
+								<img
+									className="image"
+									alt="Sajal Sharma"
+									src={radio_city_picture}
+								></img>
+							</Col>
+						</Row>
 					</Col>
 				</Row>
 			</Container>
