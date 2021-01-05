@@ -15,7 +15,7 @@ function Footer() {
 	return (
 		<div>
 			<Container className="footer" fluid>
-				<Row>
+				<Row className="content-row">
 					<Col sm={12} md={6}>
 						<div className="links">
 							<a href="https://www.facebook.com/ssajjall/">

@@ -41,6 +41,11 @@ function Home() {
 								Welcome to my website! I'm currently a Computer Science,
 								Economics, and Data Science major at UC Berkeley.
 							</p>
+
+							<p className="intro">
+								*I'm currently redesigning this website and will be making
+								improvements.
+							</p>
 						</div>
 					</Col>
 

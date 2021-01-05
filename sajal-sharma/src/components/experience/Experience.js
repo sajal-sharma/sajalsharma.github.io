@@ -152,6 +152,51 @@ function Experience() {
 						</div>
 					</Col>
 				</Row>
+
+				<Row className="content-row">
+					<Col sm={12} md={4}>
+						<p className="header">Skills</p>
+					</Col>
+
+					<Col sm={12} md={8}>
+						<div className="entry">
+							<p className="title">Programming Languages</p>
+							<ul className="bullets">
+								<li className="bullet">Python</li>
+								<li className="bullet">Java</li>
+								<li className="bullet">JavaScript/TypeScript</li>
+								<li className="bullet">C</li>
+								<li className="bullet">HTML/CSS</li>
+								<li className="bullet">Go</li>
+								<li className="bullet">MySQL</li>
+								<li className="bullet">NoSQL</li>
+							</ul>
+						</div>
+
+						<div className="entry">
+							<p className="title mt-4">Libraries and Platforms</p>
+							<ul className="bullets">
+								<li className="bullet">
+									Python: NumPy, Pandas, Scikit-learn, Seaborn, Matplotlib
+								</li>
+								<li className="bullet">
+									JavaScript: ReactJS, Node.js, Express.js
+								</li>
+								<li className="bullet">TypeScript: Angular, Clarity</li>
+								<li className="bullet">CSS: Bootstrap</li>
+							</ul>
+						</div>
+
+						<div className="entry">
+							<p className="title mt-4">Platforms and Services</p>
+							<ul className="bullets">
+								<li className="bullet">Git/GitHub</li>
+								<li className="bullet">Docker</li>
+								<li className="bullet">Jenkins CI/CD</li>
+							</ul>
+						</div>
+					</Col>
+				</Row>
 			</Container>
 
 			<Banner />

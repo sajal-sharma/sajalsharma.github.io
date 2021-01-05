@@ -6,7 +6,7 @@ import Typist from "react-typist";
 import ScrollReveal from "scrollreveal";
 
 import "../../assets/css/styles.css";
-import picture from "../../assets/images/headshot.jpg";
+import picture from "../../assets/images/headshot2.jpg";
 
 function About() {
 	useEffect(() => {
