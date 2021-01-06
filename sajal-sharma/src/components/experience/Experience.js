@@ -32,7 +32,7 @@ function Experience() {
 			<Navigation />
 
 			<Container fluid>
-				<Row className="content-row">
+				<Row className="content-row mt-5">
 					<Col sm={12} md={4}>
 						<p className="header">Work Experience</p>
 					</Col>
@@ -102,7 +102,7 @@ function Experience() {
 					</Col>
 				</Row>
 
-				<Row className="content-row">
+				<Row className="content-row mt-5">
 					<Col sm={12} md={4}>
 						<p className="header">Activities</p>
 					</Col>
@@ -153,7 +153,7 @@ function Experience() {
 					</Col>
 				</Row>
 
-				<Row className="content-row">
+				<Row className="content-row mt-5">
 					<Col sm={12} md={4}>
 						<p className="header">Skills</p>
 					</Col>

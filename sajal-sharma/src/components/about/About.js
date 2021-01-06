@@ -29,10 +29,10 @@ function About() {
 	}, []);
 
 	return (
-		<div className="about">
+		<div className="page">
 			<Navigation />
 
-			<Container fluid>
+			<Container fluid className="center">
 				<Row className="content-row">
 					<Col sm={12} md={6}>
 						<img className="headshot" alt="Sajal Sharma" src={picture}></img>
@@ -49,7 +49,7 @@ function About() {
 								Hi, I'm Sajal.
 							</Typist>
 
-							<p className="bio mt-3">
+							<p className="intro mt-3">
 								Hey! My name is Sajal Sharma, and I am currently a fourth-year
 								student at the University of California, Berkeley . I am
 								currently pursuing a triple major in Computer Science,
@@ -60,14 +60,14 @@ function About() {
 								financial technology, and quantitative trading.
 							</p>
 
-							<p className="bio">
+							<p className="intro">
 								Always seeking to learn new skills and explore my interests, I'm
 								constantly working on projects both in and out of class. I am
 								also a member of a few student organizations on campus including
 								Upsilon Pi Epsilon, Computer Science Mentors, and RoboBears.
 							</p>
 
-							<p className="bio">
+							<p className="intro">
 								Aside from academics, I also enjoying playing basketball with my
 								friends, exploring new sights around the Bay Area, tasting new
 								foods, and binging on movies.
@@ -77,7 +77,9 @@ function About() {
 				</Row>
 			</Container>
 
-			<Footer />
+			<div className="fixed-bottom">
+				<Footer />
+			</div>
 		</div>
 	);
 }

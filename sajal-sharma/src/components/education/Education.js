@@ -32,7 +32,7 @@ function Education() {
 			<Navigation />
 
 			<Container fluid>
-				<Row className="content-row">
+				<Row className="content-row mt-5">
 					<Col sm={12} md={4}>
 						<p className="header">Education</p>
 					</Col>
@@ -104,7 +104,7 @@ function Education() {
 					</Col>
 				</Row>
 
-				<Row className="content-row">
+				<Row className="content-row mt-5">
 					<Col sm={12} md={4}>
 						<p className="header">Honors</p>
 					</Col>

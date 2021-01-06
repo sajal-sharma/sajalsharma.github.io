@@ -28,10 +28,10 @@ function Home() {
 	}, []);
 
 	return (
-		<div className="about">
+		<div className="page">
 			<Navigation />
 
-			<Container fluid>
+			<Container fluid className="center">
 				<Row className="content-row">
 					<Col sm={12} md={6}>
 						<div className="content">
@@ -40,11 +40,6 @@ function Home() {
 							<p className="intro">
 								Welcome to my website! I'm currently a Computer Science,
 								Economics, and Data Science major at UC Berkeley.
-							</p>
-
-							<p className="intro">
-								*I'm currently redesigning this website and will be making
-								improvements.
 							</p>
 						</div>
 					</Col>
@@ -55,16 +50,11 @@ function Home() {
 				</Row>
 			</Container>
 
-			<Footer />
+			<div className="fixed-bottom">
+				<Footer />
+			</div>
 		</div>
 	);
 }
 
 export default Home;
-
-// style={{
-// 	position: "absolute",
-// 	left: "50%",
-// 	top: "50%",
-// 	transform: "translate(-50%, -50%)",
-// }}
