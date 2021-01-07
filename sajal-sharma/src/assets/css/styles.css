@@ -13,22 +13,6 @@
 	}
 }
 
-/* .mt-3 {
-	margin-top: 3%;
-}
-
-.mt-4 {
-	margin-top: 4%;
-}
-
-.mt-5 {
-	margin-top: 5%;
-}
-
-.mb-0 {
-	margin-bottom: 0;
-} */
-
 @media (max-width: 768px) {
 	.mobile-padding {
 		margin-top: 5%;

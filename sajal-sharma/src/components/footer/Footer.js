@@ -7,9 +7,11 @@ import {
 	faLinkedinIn,
 	faGithub,
 } from "@fortawesome/free-brands-svg-icons";
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { faEnvelope, faPaperclip } from "@fortawesome/free-solid-svg-icons";
 
 import "../../assets/css/styles.css";
+
+import resume from "../../assets/Sajal_Sharma_Resume.pdf";
 
 function Footer() {
 	return (
@@ -36,6 +38,10 @@ function Footer() {
 
 							<a href="mailto:sharma.sajal@berkeley.edu">
 								<FontAwesomeIcon className="icon" icon={faEnvelope} />
+							</a>
+
+							<a href={resume}>
+								<FontAwesomeIcon className="icon" icon={faPaperclip} />
 							</a>
 						</div>
 					</Col>
