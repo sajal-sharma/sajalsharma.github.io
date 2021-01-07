@@ -28,24 +28,26 @@ function Home() {
 	}, []);
 
 	return (
-		<div className="page">
+		<div>
 			<Navigation />
 
 			<Container fluid className="center">
 				<Row className="content-row">
-					<Col sm={12} md={6}>
-						<div className="content">
+					<Col sm={12} md={6} className="mobile-padding">
+						<div className="content center">
 							<p className="greeting">Hello, world! I'm Sajal!</p>
 
-							<p className="intro">
+							<p className="intro mb-0">
 								Welcome to my website! I'm currently a Computer Science,
 								Economics, and Data Science major at UC Berkeley.
 							</p>
 						</div>
 					</Col>
 
-					<Col sm={12} md={6}>
-						<img className="headshot" alt="Sajal Sharma" src={picture}></img>
+					<Col sm={12} md={6} className="mobile-padding">
+						<div className="center">
+							<img className="headshot" alt="Sajal Sharma" src={picture}></img>
+						</div>
 					</Col>
 				</Row>
 			</Container>

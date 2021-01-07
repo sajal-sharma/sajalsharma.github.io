@@ -29,17 +29,19 @@ function About() {
 	}, []);
 
 	return (
-		<div className="page">
+		<div>
 			<Navigation />
 
 			<Container fluid className="center">
 				<Row className="content-row">
-					<Col sm={12} md={6}>
-						<img className="headshot" alt="Sajal Sharma" src={picture}></img>
+					<Col sm={12} md={6} className="mobile-padding">
+						<div className="center">
+							<img className="headshot" alt="Sajal Sharma" src={picture}></img>
+						</div>
 					</Col>
 
-					<Col sm={12} md={6} className="right">
-						<div className="content">
+					<Col sm={12} md={6} className="right mobile-padding">
+						<div className="content center">
 							<Typist
 								className="greeting typist"
 								startDelay={750}
@@ -67,7 +69,7 @@ function About() {
 								Upsilon Pi Epsilon, Computer Science Mentors, and RoboBears.
 							</p>
 
-							<p className="intro">
+							<p className="intro mb-0">
 								Aside from academics, I also enjoying playing basketball with my
 								friends, exploring new sights around the Bay Area, tasting new
 								foods, and binging on movies.
@@ -77,7 +79,7 @@ function About() {
 				</Row>
 			</Container>
 
-			<div className="fixed-bottom">
+			<div className="bottom">
 				<Footer />
 			</div>
 		</div>
@@ -85,3 +87,5 @@ function About() {
 }
 
 export default About;
+
+// https://stackoverflow.com/questions/46432533/center-div-between-two-divs-vertically
